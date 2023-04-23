@@ -7,3 +7,6 @@ PURPLE=$(tput setaf 25)
 CYAN=$(tput setaf 6)
 WHITE=$(tput setaf 7)
 RESET=$(tput sgr0)
+
+echo "${RED}${USER}${RESET}@${YELLOW}${HOSTNAME}${RESET}"
+echo "${RED}Username: ${RESET}$(whoami)"
