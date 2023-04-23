@@ -22,4 +22,4 @@ echo "${PURPLE}Distro: ${RESET}$(cat /etc/*release | grep PRETTY_NAME | cut -d '
 # Echo shell
 echo "${CYAN}Shell: ${RESET}$(which $SHELL)"
 # Echo uptime
-echo "${GREEN}Uptime: ${RESET}$(uptime | awk '{print $1}' | cut -d "," -f 1)"
+echo "${GREEN}Uptime: ${RESET}$(uptime -p | sed "s/up //")"
