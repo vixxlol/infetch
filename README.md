@@ -1,4 +1,4 @@
-# infetch
+<h1 align="center">infetch</h1>
 
 ### About
 #### Simple fetching program for Linux/MacOS/WSL written in shell.
