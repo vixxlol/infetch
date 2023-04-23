@@ -10,3 +10,4 @@ RESET=$(tput sgr0)
 
 echo "${RED}${USER}${RESET}@${YELLOW}${HOSTNAME}${RESET}"
 echo "${RED}Username: ${RESET}$(whoami)"
+echo "${YELLOW}Hostname: ${RESET}$(hostname)"
