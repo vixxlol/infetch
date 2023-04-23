@@ -11,3 +11,4 @@ RESET=$(tput sgr0)
 echo "${RED}${USER}${RESET}@${YELLOW}${HOSTNAME}${RESET}"
 echo "${RED}Username: ${RESET}$(whoami)"
 echo "${YELLOW}Hostname: ${RESET}$(hostname)"
+echo "${PURPLE}Distro: ${RESET}$(cat /etc/*release | grep PRETTY_NAME | cut -d '"' -f 2)"
